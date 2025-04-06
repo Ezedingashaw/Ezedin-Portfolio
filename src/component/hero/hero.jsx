@@ -38,7 +38,7 @@ const Hero = ({ toggle, theme }) => {
         <h2>Full-Stack Developer</h2>
         <div className="cvInfoCont">
           <a
-            href="/ezedin_cv1.pdf"
+            href="/my_resume.pdf"
             download="MY_CV.pdf"
             className={`${theme === "dark" && "darkTheme"} downloadCV`}
           >
