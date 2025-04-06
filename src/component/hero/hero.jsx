@@ -45,7 +45,7 @@ const Hero = ({ toggle, theme }) => {
             Download CV
           </a>
           <a
-            href=""
+            href="/#contact"
             className={`${theme === "dark" && "darkTheme"} contactInfo`}
           >
             Contact info
