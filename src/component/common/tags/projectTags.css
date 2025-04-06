@@ -1,0 +1,10 @@
+span.projectTags{
+    padding: 3px 15px;
+    border-radius: 10px;
+    font-size: small;
+    border: 0.18rem solid black;
+}
+span.projectTags.darkTheme{
+    border: 0.18rem solid white;
+    color: white;
+}

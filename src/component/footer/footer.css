@@ -1,0 +1,32 @@
+footer.footer{
+    width: 100%;
+    border-top: 0.2rem solid #f727ca;
+    padding: 2rem;
+}
+footer.footer ul{
+    list-style-type: none;
+}
+footer.footer ul li{
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+footer.footer ul li i{
+    margin-right: 0.5rem;
+}
+footer.footer ul li i.darkTheme{
+    color: white;
+}
+footer.footer ul li a{
+    text-decoration: none;
+    color: black;
+}
+footer.footer ul li a.darkTheme{
+    color: white;
+}
+@media screen and (max-width: 500px){
+    footer.footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,126 @@
+.customModalContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    -webkit-backdrop-filter: blur(100px);
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+   
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ div.contentContainer{
+    width: 50%;
+    height: 70%;
+    border-radius: 20px;
+    overflow: hidden ;    
+    
+    background-color: white;
+    align-self: center;
+    z-index: 400;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.3fr;
+    gap: 0;
+}
+div.contentContainer.darkTheme{
+    background-color: rgba(10, 10, 10, 0.5);
+}
+.contentContainer span.close{
+    background-color: rgb(255, 70, 70);;
+    position: absolute;
+    right: 0;
+    color: white;
+    font-size: medium ;
+    padding: 10px 13px ;
+    z-index: 10;
+    cursor: pointer;
+}
+.contentContainer span.close:hover{
+    background-color: red;
+}
+
+.contentContainer  img.projectImage{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.projectConatainer{
+    position: relative;
+}
+.projectConatainer .previousButton, .contentContainer .nextButton{
+    position: absolute;
+    width: 7rem;
+    background-color: rgb(0, 0, 0, 0.2);
+    height: 100%;
+    transition: backgroundColor 3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.contentContainer{
+    overflow-y: scroll !important ;
+}
+.contentContainer .nextButton{
+    right: 0;
+}
+.projectConatainer .previousButton:hover, .contentContainer .nextButton:hover{
+    background-color: rgb(0, 0, 0, 0.4);
+}
+.projectConatainer .previousButton i, .contentContainer .nextButton i{
+    color: white;
+    font-size: 3rem;
+}
+.contentContainer .descriptionContainer{
+    padding: 1rem;
+} 
+.contentContainer .descriptionContainer h2{
+    font-size: 3rem;    
+}
+.contentContainer .descriptionContainer h2.darkTheme{
+    color: white;
+}
+.contentContainer .descriptionContainer p{
+    font-size: 1.4rem;    
+    line-height: 1.5;
+}
+.contentContainer .descriptionContainer p.darkTheme{
+    color: white;
+}
+.contentContainer  div.tagsContainer{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 0 1rem 2rem ;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 1400px){
+    div.contentContainer{
+        width: 60%;
+        height: 80%;
+       
+    }
+}
+@media screen and (max-width: 1000px){
+    div.contentContainer{
+        width: 90%;
+        height: 90%;
+    }
+}
+@media screen and (max-width: 800px){
+    div.contentContainer{
+   
+        height: 80%;
+    }
+}
+@media screen and (max-width: 500px){
+    .contentContainer  img.projectImage{
+        object-fit: contain;
+    }
+}
