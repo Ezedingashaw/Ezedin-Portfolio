@@ -9,8 +9,10 @@ import netflix2 from "../assets/netflix2.png";
 import netflix3 from "../assets/netflix3.png";
 import netflix4 from "../assets/netflix4.png";
 // Weather app images
-import weather1 from "../assets/Screenshot 2025-01-26 234304.png";
-import weather2 from "../assets/Screenshot 2025-01-26 234521.png";
+import url_shortner1 from "../assets/Screenshot 2025-05-11 114329.png";
+import url_shortner2 from "../assets/Screenshot 2025-05-11 114424.png";
+import url_shortner3 from "../assets/Screenshot 2025-05-11 114312.png";
+import url_shortner4 from "../assets/Screenshot 2025-05-06 163629.png";
 // E-commerce-site
 import eCommerce1 from "../assets/Screenshot 2025-01-26 235325.png";
 import eCommerce2 from "../assets/Screenshot 2025-01-26 235447.png";
@@ -26,6 +28,11 @@ import seller1 from "../assets/Screenshot 2025-01-27 000508.png";
 import seller2 from "../assets/Screenshot 2025-01-27 002020.png";
 import seller3 from "../assets/Screenshot 2025-01-27 002109.png";
 import seller4 from "../assets/Screenshot 2025-01-27 002139.png";
+// Wollo University pc registration system
+import wolloUV1 from "../assets/Screenshot 2025-05-11 115507.png";
+import wolloUV2 from "../assets/Screenshot 2025-05-11 115521.png";
+import wolloUV3 from "../assets/Screenshot 2025-05-11 120413.png";
+import wolloUV4 from "../assets/Screenshot 2025-05-11 120631.png";
 const projects_ = [
   {
     _id: 1,
@@ -55,16 +62,23 @@ const projects_ = [
   },
   {
     _id: 3,
-    project_title: "Weather app",
+    project_title: "URL Shortener Web App",
     github_link: "https://github.com/Ezedingashaw/weather_app",
     demo_link: "/",
     discription:
-      "A responsive weather application built with React, featuring real-time weather data integration through APIs. The app provides users with accurate, location-based weather updates in a modern and intuitive interface.",
-    image_one: weather1,
-    image_two: weather2,
-    image_three: weather1,
-    image_four: weather2,
-    technologies: ["React", "CSS"],
+      "A full-featured URL shortening platform that allows users to generate both random and custom short URLs. Includes support for password-protected links, click limit enforcement, and a user dashboard to monitor and manage link analytics and details.",
+    image_one: url_shortner1,
+    image_two: url_shortner2,
+    image_three: url_shortner3,
+    image_four: url_shortner4,
+    technologies: [
+      "React",
+      "Tailwind css",
+      "Express.JS",
+      "Node.JS",
+      "Mysql",
+      "Prisma",
+    ],
   },
   {
     _id: 4,
@@ -81,6 +95,26 @@ const projects_ = [
   },
   {
     _id: 5,
+    project_title: "E-commerce website",
+    github_link: "https://github.com/Ezedingashaw/e-commerce_site_front_end",
+    demo_link: "/",
+    discription:
+      "A full-stack e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). It features seller registration, allowing users to sell their products on the platform, along with a responsive and user-friendly shopping experience.",
+    image_one: wolloUV1,
+    image_two: wolloUV2,
+    image_three: wolloUV3,
+    image_four: wolloUV4,
+    technologies: [
+      "React",
+      "TailwindCSS",
+      "Express.JS",
+      "Node.JS",
+      "Mysql",
+      "Prisma",
+    ],
+  },
+  {
+    _id: 6,
     project_title: "E-commerce Admin page",
     github_link:
       "https://github.com/Ezedingashaw/e-commerce_site_super_admin_site",
@@ -94,7 +128,7 @@ const projects_ = [
     technologies: ["React", "TailwindCSS", "Express.JS", "Node.JS", "MondoDB"],
   },
   {
-    _id: 6,
+    _id: 7,
     project_title: "E-commerce Sellers page",
     github_link: "https://github.com/Ezedingashaw/e-commerce_site_vendor_site",
     demo_link: "/",
