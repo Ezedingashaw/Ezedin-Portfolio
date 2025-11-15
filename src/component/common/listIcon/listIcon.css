@@ -15,7 +15,7 @@
     display: inline-block;
     width: 75%;
     height: 0.3rem;
-    background-color: white;
+    background-color: black;
     border-radius: 1rem;
     transition: 0.3s transform;
     transition-delay: 0.25s;
@@ -34,7 +34,7 @@
     transform: rotate(50deg) translate(-2px);
     width: 70%;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
     .listIcon{
         display: flex;
     }
