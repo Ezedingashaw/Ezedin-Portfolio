@@ -6,11 +6,13 @@ import "./experience.css";
 import "aos/dist/aos.css";
 import Loading from "../loading/loading";
 import technologyByStack from "../../services/getTechnologyStack";
+import dbImage from "../../assets/database.png"
 
 const Experience = ({ theme }) => {
   const [experience, setExperience] = useState([]);
   const [frontTechnology, setFrontTechnology] = useState([]);
   const [backTechnology, setBackTechnology] = useState([]);
+  const [dbTechnology, setdbTechnology] = useState([]);
 
   useEffect(() => {
     AOS.init({
@@ -28,8 +30,10 @@ const Experience = ({ theme }) => {
 
         const frontTechnology = technologyByStack(data, "Front");
         const backTechnology = technologyByStack(data, "Back");
+        const dbTechnology = technologyByStack(data, "db");
         setFrontTechnology(frontTechnology);
         setBackTechnology(backTechnology);
+        setdbTechnology(dbTechnology)
       } catch (err) {
         console.log(err);
       }
@@ -47,7 +51,7 @@ const Experience = ({ theme }) => {
       <div className="skills">
         <div
           data-aos="zoom-in"
-          className={`frontEndCont ${theme === "dark" && " darkTheme"}`}
+          className={`frontEndCont ${theme === "dark" && " darkTheme"} shadow-sm hover:shadow-lg relative bottom-0 hover:bottom-1 transition-all duration-200`}
         >
           <h2>Front-End Development</h2>
           {frontTechnology.length !== 0 ? (
@@ -66,12 +70,32 @@ const Experience = ({ theme }) => {
         </div>
         <div
           data-aos="zoom-in"
-          className={`backEndCont ${theme === "dark" && " darkTheme"}`}
+          className={`frontEndCont ${theme === "dark" && " darkTheme"} shadow-sm hover:shadow-lg relative bottom-0 hover:bottom-1 transition-all duration-200`}
         >
           <h2>Back-End Development</h2>
           {backTechnology.length !== 0 ? (
             <div className="cont">
               {backTechnology.map((technology) => {
+                return (
+                  <div>
+                    <img src={technology.image} alt="" />
+                  </div>
+                );
+              })}
+            </div>
+          ) : (
+            <Loading />
+          )}
+        </div>
+        <div
+          data-aos="zoom-in"
+          className={`backEndCont ${theme === "dark" && " darkTheme"} shadow-sm hover:shadow-lg relative bottom-0 hover:bottom-1 transition-all duration-200`}
+        >
+          
+          <h2>Database</h2>
+          {dbTechnology.length !== 0 ? (
+            <div className="cont">
+              {dbTechnology.map((technology) => {
                 return (
                   <div>
                     <img src={technology.image} alt="" />
