@@ -1,7 +1,8 @@
 footer.footer{
     width: 100%;
-    border-top: 0.2rem solid #f727ca;
+    border-top: 0.2rem solid #0ea5e9;
     padding: 2rem;
+    background: white
 }
 footer.footer ul{
     list-style-type: none;
