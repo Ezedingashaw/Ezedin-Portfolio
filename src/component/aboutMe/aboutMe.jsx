@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./aboutMe.css";
 import myImage from "../../assets/ezedin.jpg";
+import { Button } from "@/components/ui/button";
 
 const AboutMe = ({ theme }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
