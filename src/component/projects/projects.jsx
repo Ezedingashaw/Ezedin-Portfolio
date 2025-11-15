@@ -1,12 +1,13 @@
-import React, { Fragment, useEffect, useState } from "react";
-import Modal from "react-modal";
 import AOS from "aos";
-import pro from "../../services/projects.js";
-import "./projects.css";
 import axios from "axios";
-import Loading from "../loading/loading";
-import projects_ from "../../services/projects.js";
+import { ArrowRightTag } from 'iconoir-react';
+import { Fragment, useEffect, useState } from "react";
+import Modal from "react-modal";
+import { default as pro, default as projects_ } from "../../services/projects.js";
 import ProjectTags from "../common/tags/projectTags.js";
+import Loading from "../loading/loading";
+import "./projects.css";
+import {Github} from "iconoir-react"
 
 const Projects = ({ navBarToggle, selectedProject, handleModel, theme }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -115,6 +116,11 @@ const Projects = ({ navBarToggle, selectedProject, handleModel, theme }) => {
     setIndex(i);
   };
 
+  const text = (text) => {
+    const newText = text.length > 100 ? text.slice(0,100)+ '...' : text;
+    return newText
+  }
+
   Modal.setAppElement("#root");
 
   return (
@@ -132,35 +138,35 @@ const Projects = ({ navBarToggle, selectedProject, handleModel, theme }) => {
               return (
                 <div
                   data-aos="zoom-in"
-                  className={`${theme === "dark" && "darkTheme"} project`}
+                  className={`${theme === "dark" ? "darkTheme" : ""} group project shadow-sm hover:shadow-lg transition-transform duration-200 relative hover:-translate-y-1`}
+
                 >
                   <div
-                    onClick={() => {
+                    
+                    className="image relative"
+                  >
+                    <div className="absolute w-full h-full bg-black opacity-0 transition-opacity duration-300 items-end justify-start px-10 py-15 group-hover:opacity-30 flex">
+                      <h3 className="text-white text-3xl font-bold group-hover:">{project.title}</h3>
+                    </div>
+                    <img className="" src={project.image_one} alt="" />
+                  </div>
+                  <div className="px-10">
+                    <h2 className="text-black text-3xl font-bold mb-2">{project.title} </h2>
+                    <p className="text-gray-500 text-2xl/8">{ text(project.discription)}</p>
+                    
+                  </div>
+                  <div className="px-10 flex justify-between items-center w-full py-5">
+                    <p className="text-blue-400 text-xl flex gap-10 hover:bg-blue-100 transition-all duration-100 cursor-pointer py-1 px-[2px] rounded-xl" onClick={() => {
                       handleModel(true);
                       selectedProject(project._id);
                       // handlemodalIsOpen();
                       // initializeProject(project);
-                    }}
-                    className="image"
-                  >
-                    <img src={project.image_one} alt="" />
+                    }}>
+                      View Details <ArrowRightTag />
+                    </p>
+                    <Github className="hover:text-blue-500 transition-colors duration-200 cursor-pointer "/>
                   </div>
-                  <div className="links">
-                    <a
-                      href={`${project.github_link}`}
-                      target="_blank"
-                      className={`gitHub ${theme === "dark" && "darkTheme"}`}
-                    >
-                      GitHub
-                    </a>
-                    <a
-                      href={`${project.demo_link}`}
-                      target="_blank"
-                      className={`liveDemo ${theme === "dark" && "darkTheme"}`}
-                    >
-                      Live Demo
-                    </a>
-                  </div>
+                 
                 </div>
               );
             })}
@@ -194,6 +200,7 @@ const Projects = ({ navBarToggle, selectedProject, handleModel, theme }) => {
               <i class="fa-solid fa-chevron-right"></i>
             </div>
             <div className="projectTagsContainer">
+              <h2>Technologies used</h2>
               {project[0]?.technologies?.map((technology) => (
                 <>
                   <ProjectTags text={technology} />
