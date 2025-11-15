@@ -15,7 +15,7 @@ section.WelcomeLoader p{
 }
 
 section.WelcomeLoader div {
-    background-color: #ff99e9;
+    background-color: rgba(67, 67, 67, 0.3);
     width: 20rem;
     height: 1rem;
     border-radius: 1rem;
@@ -26,7 +26,7 @@ section.WelcomeLoader div {
 }
 section.WelcomeLoader div::before{
     content: '';
-    background-color: #f727ca;
+    background-color:#0ea5e9;
     position: absolute;
     height: 100%;
     width: 100%;
