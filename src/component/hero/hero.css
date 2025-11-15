@@ -8,6 +8,7 @@ section.hero{
     column-gap: 10rem;
     padding: 10rem 1rem;
     position: relative;
+    background: white
 }
 section.hero .goUpIcon{
     position: fixed;
@@ -20,7 +21,7 @@ section.hero .goUpIcon a{
     right: 5rem;
     width: 4rem;
     height: 4rem;
-    background: linear-gradient(-45deg,#f727ca, white);
+    background: linear-gradient(-45deg,#0ea5e9, white);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +31,7 @@ section.hero .goUpIcon a{
     transition: 0.3s background;
 }
 section.hero .goUpIcon a:hover{
-    background: linear-gradient(-45deg,#ff7ee3, #ff61dd);
+    background: linear-gradient(-45deg,#ff7ee3, #0ea5e9);
 }
 section.hero .myImage{
     width: 40rem;
@@ -42,7 +43,9 @@ section.hero .myImage{
     position: relative;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    box-shadow: 0 0 2rem 0.3rem rgba(247, 39, 202, 0.1);
+    border: 2px solid #0ea5e9;
+    /* border-color: #0ea5e9; */
+    box-shadow: 0 0 2rem 0.3rem rgba(14,165,233,0.3);
 }
 section.hero .discription{
     width: 100%;
@@ -55,7 +58,7 @@ section.hero .discription{
 }
 section.hero .discription h1{
     font-size: 4rem;
-    background: linear-gradient(-45deg,#f727ca, rgb(241, 202, 202));
+    background: linear-gradient(-45deg,#0ea5e9, rgb(241, 202, 202));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -70,7 +73,7 @@ section.hero .discription h2{
     font-size: 2.5rem;
     line-height: 1.5;
     color: darkgray;
-    background: linear-gradient(-45deg,#e661c9, #e661c9);
+    background: linear-gradient(-45deg,#0ea5e9, #e661c9);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -93,7 +96,7 @@ section.hero .discription .cvInfoCont a{
 }
 section.hero .discription .cvInfoCont a.downloadCV{
     color: black;
-    box-shadow: -0.2rem 0.1rem 0.2rem 0.05rem #f727ca;
+    box-shadow: -0.2rem 0.1rem 0.2rem 0.05rem #0ea5e9;
     position: relative;
     overflow: hidden;
     transition: 0.3s color;
@@ -113,7 +116,7 @@ section.hero .discription .cvInfoCont a.downloadCV::after{
     width: 0;
     height: 100%;
     position: absolute;
-    background: linear-gradient(-45deg,#f727ca, rgb(241, 202, 202));
+    background: linear-gradient(-45deg,#0ea5e9, rgb(241, 202, 202));
     transition: 0.3s width;
 }
 section.hero .discription .cvInfoCont a.downloadCV:hover::after{
@@ -122,8 +125,8 @@ section.hero .discription .cvInfoCont a.downloadCV:hover::after{
 section.hero .discription .cvInfoCont a.contactInfo{
     color: white;
     background-color: black;
-    box-shadow: -0.2rem 0.1rem 0.2rem 0.05rem #f727ca;
-    background: linear-gradient(-45deg,#f727ca, rgb(241, 202, 202));
+    box-shadow: -0.2rem 0.1rem 0.2rem 0.05rem #0ea5e9;
+    background: linear-gradient(-45deg,#0ea5e9, rgb(241, 202, 202));
 }
 section.hero .discription .cvInfoCont a.contactInfo.darkTheme{
     box-shadow: -0.2rem 0.1rem 0.2rem 0.05rem white;
