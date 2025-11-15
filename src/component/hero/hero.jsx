@@ -20,6 +20,8 @@ const Hero = ({ toggle, theme }) => {
     };
     window.addEventListener("scroll", handleScroll);
   }, []);
+
+
   return (
     <section className="hero" id="hero">
       {isScrolled > 100 && toggle && (
@@ -33,7 +35,7 @@ const Hero = ({ toggle, theme }) => {
         <img src={myImage} alt="" />
       </div>
       <div data-aos="slide-left" className="discription">
-        <p className={`${theme === "dark" && "darkTheme"}`}>Hello,I'm</p>
+        <p className={`${theme === "dark" && "darkTheme"} text-[#0ea5e9]`}>Hello,I'm</p>
         <h1>Ezedin Gashaw</h1>
         <h2>Full-Stack Developer</h2>
         <div className="cvInfoCont">
