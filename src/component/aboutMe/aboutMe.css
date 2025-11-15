@@ -6,7 +6,8 @@ section.aboutMe{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5rem;
+    
+    background: white
 }
 section.aboutMe .aboutContent{
     width: 80%;
@@ -27,7 +28,7 @@ section.aboutMe .aboutMeCont p.darkTheme{
 section.aboutMe .aboutMeCont h2{
     font-size: 4rem;
     text-decoration: underline;
-    background: linear-gradient(-45deg,#f727ca, rgb(241, 202, 202));
+    background: linear-gradient(-45deg,#0ea5e9, rgb(241, 202, 202));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -81,7 +82,7 @@ section.aboutMe .aboutContent .skillDiscription div{
     justify-content: center;
     height: 15rem;
     row-gap: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 1rem 0.01rem rgba(230, 5, 181, 0.7);
+    box-shadow: 0.2rem 0.2rem 1rem 0.01rem rgba(14,165,233,0.3);
 }
 section.aboutMe .aboutContent .skillDiscription div.darkTheme{
     box-shadow: 0.1rem 0.1rem 0.3rem 0.01rem white;
@@ -94,7 +95,7 @@ section.aboutMe .aboutContent .skillDiscription div i.darkTheme{
 }
 section.aboutMe .aboutContent .skillDiscription div h3{
     font-size: 2rem;
-    background: linear-gradient(-45deg,#f727ca, rgb(241, 202, 202));
+    background: linear-gradient(-45deg,#0ea5e9, rgb(241, 202, 202));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -102,7 +103,7 @@ section.aboutMe .aboutContent .skillDiscription div p{
     font-size: 1.5rem;
     color: darkgray;
     font-weight: bold;
-    background: linear-gradient(-45deg,#f727ca, rgb(241, 202, 202));
+    background: linear-gradient(-45deg,#0ea5e9, rgb(241, 202, 202));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
