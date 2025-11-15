@@ -5,6 +5,7 @@ section.contact{
     align-items: center;
     justify-content: center;
     padding: 10rem 3rem;
+    background: white
 }
 section.contact .contactCont{
     display: flex;
@@ -22,7 +23,7 @@ section.contact .contactText p.darkTheme{
 section.contact .contactText h2{
     font-size: 4rem;
     text-decoration: underline;
-    background: linear-gradient(-45deg,#f727ca, rgb(241, 202, 202));
+    background: linear-gradient(-45deg,#0ea5e9, rgb(241, 202, 202));
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -33,7 +34,7 @@ section.contact .linksCont{
     align-self: center;
 }
 section.contact .contactLinks{
-    border: 0.2rem solid rgba(255, 130, 228, 0.7);
+    border: 0.2rem solid rgba(14,165,233,0.3);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -41,7 +42,7 @@ section.contact .contactLinks{
     padding: 1rem 4rem;
     border-radius: 3rem;
     background-color: white;
-    box-shadow: 0.2rem 0.2rem 1rem 0.01rem rgba(230, 5, 181, 0.7);
+    box-shadow: 0.2rem 0.2rem 1rem 0.01rem rgba(14,165,233,0.3);
 }
 section.contact .linksCont::before{
     content: '';
@@ -67,7 +68,7 @@ section.contact .linksCont:hover .contactLinks{
 }
 section.contact .linksCont::after{
     content: '';
-    background:   #7103cb;
+    background:   rgba(14,165,233,0.3);
     position: absolute;
     width: 0;
     height: 0;
@@ -77,7 +78,7 @@ section.contact .linksCont::after{
     transform: scale(1.02);
     border-top-right-radius: 3rem;
     border-bottom-right-radius: 3rem;
-    box-shadow: 0 0 0.5rem 0.1rem #7103cb;
+    box-shadow: 0 0 0.5rem 0.1rem rgba(14,165,233,0.3);
     transition: 0.3s width, 0.3s height;
 }
 section.contact .contactLinks a{
