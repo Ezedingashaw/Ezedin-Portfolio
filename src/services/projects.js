@@ -41,7 +41,8 @@ const projects_ = [
     demo_link: "/",
     discription:
       "A fully responsive Netflix clone built using React and Tailwind CSS, showcasing features like a modern user interface, dynamic components, and seamless design inspired by the original Netflix platform.",
-    image_one: netflix1,
+    title: "Full style",
+      image_one: netflix1,
     image_two: netflix2,
     image_three: netflix3,
     image_four: netflix4,
@@ -54,7 +55,8 @@ const projects_ = [
     demo_link: "/",
     discription:
       "A full-stack e-commerce platform for showcasing and purchasing shoes, featuring a responsive design, product categorization, and a seamless shopping cart experience. Built using React, Node.js, Express, MySQL, and styled with Tailwind CSS to ensure a modern and efficient user interface.",
-    image_one: shoe1,
+    title: "Full style",
+      image_one: shoe1,
     image_two: shoe2,
     image_three: shoe3,
     image_four: shoe4,
@@ -67,7 +69,8 @@ const projects_ = [
     demo_link: "/",
     discription:
       "A full-featured URL shortening platform that allows users to generate both random and custom short URLs. Includes support for password-protected links, click limit enforcement, and a user dashboard to monitor and manage link analytics and details.",
-    image_one: url_shortner1,
+    title: "Full style",
+      image_one: url_shortner1,
     image_two: url_shortner2,
     image_three: url_shortner3,
     image_four: url_shortner4,
@@ -87,7 +90,8 @@ const projects_ = [
     demo_link: "/",
     discription:
       "A full-stack e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). It features seller registration, allowing users to sell their products on the platform, along with a responsive and user-friendly shopping experience.",
-    image_one: eCommerce1,
+    title: "Full style",
+      image_one: eCommerce1,
     image_two: eCommerce2,
     image_three: eCommerce3,
     image_four: eCommerce4,
@@ -100,7 +104,8 @@ const projects_ = [
     demo_link: "/",
     discription:
       "A full-stack e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). It features seller registration, allowing users to sell their products on the platform, along with a responsive and user-friendly shopping experience.",
-    image_one: wolloUV1,
+    title: "Full style",
+      image_one: wolloUV1,
     image_two: wolloUV2,
     image_three: wolloUV3,
     image_four: wolloUV4,
@@ -121,7 +126,8 @@ const projects_ = [
     demo_link: "/",
     discription:
       "An admin dashboard built using the MERN stack (MongoDB, Express, React, Node.js) to manage and oversee the entire e-commerce platform. Features include monitoring user activity, managing sellers and products, and providing full control over the platform's operations in a user-friendly interface.",
-    image_one: admin1,
+    title: "Full style",
+      image_one: admin1,
     image_two: admin2,
     image_three: admin3,
     image_four: admin4,
@@ -134,7 +140,8 @@ const projects_ = [
     demo_link: "/",
     discription:
       "A seller dashboard built using the MERN stack (MongoDB, Express, React, Node.js), enabling sellers to manage their product listings, track sales, and oversee their storefronts. The interface is intuitive and designed to streamline the seller's experience on the platform.",
-    image_one: seller1,
+    title: "Full style",
+      image_one: seller1,
     image_two: seller2,
     image_three: seller3,
     image_four: seller4,

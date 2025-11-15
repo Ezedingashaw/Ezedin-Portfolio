@@ -8,6 +8,9 @@ import mySqlImage from "../assets/mySql.png";
 import mongoDBImage from "../assets/1_doAg1_fMQKWFoub-6gwUiQ.png";
 import postgresSqlImage from "../assets/images (6).jpg";
 import tsImage from "../assets/ts.png";
+import nestImage from "../assets/nest.png";
+import laravelImage from "../assets/laravel.png"
+import nextImage from "../assets/next.png"
 const technologies = [
   {
     stack: "Front",
@@ -31,6 +34,11 @@ const technologies = [
   },
   {
     stack: "Front",
+    image: nextImage,
+    name: "Next JS",
+  },
+  {
+    stack: "Front",
     image: tsImage,
     name: "TypeScript",
   },
@@ -46,16 +54,26 @@ const technologies = [
   },
   {
     stack: "Back",
+    image: nestImage,
+    name: "Nest JS",
+  },
+  {
+    stack: "Back",
+    image: laravelImage,
+    name: "Laravel",
+  },
+  {
+    stack: "db",
     image: mySqlImage,
     name: "MySql",
   },
   {
-    stack: "Back",
+    stack: "db",
     image: mongoDBImage,
     name: "MongoDB",
   },
   {
-    stack: "Back",
+    stack: "db",
     image: postgresSqlImage,
     name: "PostgresSql",
   },
