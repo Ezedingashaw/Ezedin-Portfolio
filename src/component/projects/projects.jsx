@@ -143,15 +143,15 @@ const Projects = ({ navBarToggle, selectedProject, handleModel, theme }) => {
                 >
                   <div
                     
-                    className="image relative"
+                    className="image relative border-b-gray-100 border-b"
                   >
                     <div className="absolute w-full h-full bg-black opacity-0 transition-opacity duration-300 items-end justify-start px-10 py-15 group-hover:opacity-30 flex">
-                      <h3 className="text-white text-3xl font-bold group-hover:">{project.title}</h3>
+                      <h3 className="text-white text-3xl font-bold group-hover:">{project.project_title}</h3>
                     </div>
                     <img className="" src={project.image_one} alt="" />
                   </div>
                   <div className="px-10">
-                    <h2 className="text-black text-3xl font-bold mb-2">{project.title} </h2>
+                    <h2 className="text-black text-3xl font-bold mb-2">{project.project_title} </h2>
                     <p className="text-gray-500 text-2xl/8">{ text(project.discription)}</p>
                     
                   </div>
