@@ -19,53 +19,51 @@ import eCommerce2 from "../assets/Screenshot 2025-01-26 235447.png";
 import eCommerce3 from "../assets/Screenshot 2025-01-26 235507.png";
 import eCommerce4 from "../assets/Screenshot 2025-01-26 235527.png";
 // E-commerce admin page images
-import admin1 from "../assets/Screenshot 2025-01-27 000508.png";
-import admin2 from "../assets/Screenshot 2025-01-27 001203.png";
-import admin3 from "../assets/Screenshot 2025-01-27 001223.png";
-import admin4 from "../assets/Screenshot 2025-01-27 001300.png";
+import admin1 from "../assets/Screenshot 2025-09-10 103729.png";
+import admin2 from "../assets/Screenshot 2025-09-10 103751.png";
+import admin3 from "../assets/Screenshot 2025-09-10 103925.png";
+import admin4 from "../assets/Screenshot 2025-09-10 104023.png";
 // E-commerce seller page
 import seller1 from "../assets/Screenshot 2025-01-27 000508.png";
 import seller2 from "../assets/Screenshot 2025-01-27 002020.png";
 import seller3 from "../assets/Screenshot 2025-01-27 002109.png";
 import seller4 from "../assets/Screenshot 2025-01-27 002139.png";
 // Wollo University pc registration system
-import wolloUV1 from "../assets/Screenshot 2025-05-11 115507.png";
-import wolloUV2 from "../assets/Screenshot 2025-05-11 115521.png";
-import wolloUV3 from "../assets/Screenshot 2025-05-11 120413.png";
-import wolloUV4 from "../assets/Screenshot 2025-05-11 120631.png";
+import wolloUV1 from "../assets/Screenshot 2025-09-10 103729.png";
+import wolloUV2 from "../assets/Screenshot 2025-09-10 103751.png";
+import wolloUV3 from "../assets/Screenshot 2025-09-10 103925.png";
+import wolloUV4 from "../assets/Screenshot 2025-09-10 104023.png";
+// Pharmacy Management System
+import psm1 from "../assets/Screenshot 2025-11-27 224820.png";
+import psm2 from "../assets/Screenshot 2025-11-27 224837.png";
+import psm3 from "../assets/Screenshot 2025-11-27 224856.png";
+import psm4 from "../assets/Screenshot 2025-11-27 224920.png";
 const projects_ = [
   {
-    _id: 1,
-    project_title: "Netflix clone",
-    github_link: "https://github.com/Ezedingashaw/netflix_clone",
+    _id: 5,
+    project_title: "PC Registration & Verification System",
+    github_link: "https://github.com/Ezedingashaw/e-commerce_site_front_end",
     demo_link: "/",
     discription:
-      "A fully responsive Netflix clone built using React and Tailwind CSS, showcasing features like a modern user interface, dynamic components, and seamless design inspired by the original Netflix platform.",
-    title: "Full style",
-      image_one: netflix1,
-    image_two: netflix2,
-    image_three: netflix3,
-    image_four: netflix4,
-    technologies: ["React", "CSS"],
-  },
-  {
-    _id: 2,
-    project_title: "Shoe online shop",
-    github_link: "https://github.com/Ezedingashaw/shoe_site_front_end",
-    demo_link: "/",
-    discription:
-      "A full-stack e-commerce platform for showcasing and purchasing shoes, featuring a responsive design, product categorization, and a seamless shopping cart experience. Built using React, Node.js, Express, MySQL, and styled with Tailwind CSS to ensure a modern and efficient user interface.",
-    title: "Full style",
-      image_one: shoe1,
-    image_two: shoe2,
-    image_three: shoe3,
-    image_four: shoe4,
-    technologies: ["React", "CSS", "Mysql", "Express.JS", "Node.JS"],
+      "The PC Registration System is a MERN-stack web application built to digitize the process of registering student laptops at Wollo University. It provides a clean student interface for submitting personal and PC details, along with an admin dashboard where security staff can review, approve, or reject registrations. The system includes automated email notifications to inform students about the status of their request, ensuring fast communication and a smooth verification workflow.",
+    title: "PC Registration & Verification System",
+      image_one: wolloUV1,
+    image_two: wolloUV2,
+    image_three: wolloUV3,
+    image_four: wolloUV4,
+    technologies: [
+      "React",
+      "TailwindCSS",
+      "Express.JS",
+      "Node.JS",
+      "Mysql",
+      "Prisma",
+    ],
   },
   {
     _id: 3,
     project_title: "URL Shortener Web App",
-    github_link: "https://github.com/Ezedingashaw/weather_app",
+    github_link: "https://github.com/Ezedingashaw",
     demo_link: "/",
     discription:
       "A full-featured URL shortening platform that allows users to generate both random and custom short URLs. Includes support for password-protected links, click limit enforcement, and a user dashboard to monitor and manage link analytics and details.",
@@ -84,9 +82,51 @@ const projects_ = [
     ],
   },
   {
+    _id: 8,
+    project_title: "Pharmacy Management System",
+    github_link: "https://github.com/Ezedingashaw",
+    demo_link: "/",
+    discription:
+      "The Pharmacy Management System is a full-stack application designed to streamline medicine inventory and daily operations for pharmacies. It allows admins to manage medicines, categories, batches, and stock levels while supporting real-time updates for quantity tracking. The system also includes features for adding new medicines, updating batch information, monitoring low-stock alerts, and ensuring organized, efficient pharmacy workflow.",
+    title: "Pharmacy Management System",
+    image_one: psm1,
+    image_two: psm2,
+    image_three: psm3,
+    image_four: psm4,
+    technologies: ["React", "TailwindCSS", "Express.JS", "Node.JS", "MondoDB"],
+  },
+  {
+    _id: 1,
+    project_title: "Netflix clone",
+    github_link: "https://github.com/Ezedingashaw",
+    demo_link: "/",
+    discription:
+      "A fully responsive Netflix clone built using React and Tailwind CSS, showcasing features like a modern user interface, dynamic components, and seamless design inspired by the original Netflix platform.",
+    title: "Full style",
+      image_one: netflix1,
+    image_two: netflix2,
+    image_three: netflix3,
+    image_four: netflix4,
+    technologies: ["React", "CSS"],
+  },
+  {
+    _id: 2,
+    project_title: "Shoe online shop",
+    github_link: "https://github.com/Ezedingashaw",
+    demo_link: "/",
+    discription:
+      "A full-stack e-commerce platform for showcasing and purchasing shoes, featuring a responsive design, product categorization, and a seamless shopping cart experience. Built using React, Node.js, Express, MySQL, and styled with Tailwind CSS to ensure a modern and efficient user interface.",
+    title: "Full style",
+      image_one: shoe1,
+    image_two: shoe2,
+    image_three: shoe3,
+    image_four: shoe4,
+    technologies: ["React", "CSS", "Mysql", "Express.JS", "Node.JS"],
+  },
+  {
     _id: 4,
     project_title: "E-commerce website",
-    github_link: "https://github.com/Ezedingashaw/e-commerce_site_front_end",
+    github_link: "https://github.com/Ezedingashaw",
     demo_link: "/",
     discription:
       "A full-stack e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). It features seller registration, allowing users to sell their products on the platform, along with a responsive and user-friendly shopping experience.",
@@ -98,45 +138,9 @@ const projects_ = [
     technologies: ["React", "TailwindCSS", "Express.JS", "Node.JS", "MondoDB"],
   },
   {
-    _id: 5,
-    project_title: "E-commerce website",
-    github_link: "https://github.com/Ezedingashaw/e-commerce_site_front_end",
-    demo_link: "/",
-    discription:
-      "A full-stack e-commerce platform built using the MERN stack (MongoDB, Express, React, Node.js). It features seller registration, allowing users to sell their products on the platform, along with a responsive and user-friendly shopping experience.",
-    title: "Full style",
-      image_one: wolloUV1,
-    image_two: wolloUV2,
-    image_three: wolloUV3,
-    image_four: wolloUV4,
-    technologies: [
-      "React",
-      "TailwindCSS",
-      "Express.JS",
-      "Node.JS",
-      "Mysql",
-      "Prisma",
-    ],
-  },
-  {
-    _id: 6,
-    project_title: "E-commerce Admin page",
-    github_link:
-      "https://github.com/Ezedingashaw/e-commerce_site_super_admin_site",
-    demo_link: "/",
-    discription:
-      "An admin dashboard built using the MERN stack (MongoDB, Express, React, Node.js) to manage and oversee the entire e-commerce platform. Features include monitoring user activity, managing sellers and products, and providing full control over the platform's operations in a user-friendly interface.",
-    title: "Full style",
-      image_one: admin1,
-    image_two: admin2,
-    image_three: admin3,
-    image_four: admin4,
-    technologies: ["React", "TailwindCSS", "Express.JS", "Node.JS", "MondoDB"],
-  },
-  {
     _id: 7,
     project_title: "E-commerce Sellers page",
-    github_link: "https://github.com/Ezedingashaw/e-commerce_site_vendor_site",
+    github_link: "https://github.com/Ezedingashaw",
     demo_link: "/",
     discription:
       "A seller dashboard built using the MERN stack (MongoDB, Express, React, Node.js), enabling sellers to manage their product listings, track sales, and oversee their storefronts. The interface is intuitive and designed to streamline the seller's experience on the platform.",
